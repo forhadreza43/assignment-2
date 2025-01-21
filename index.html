@@ -1,21 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School</title>
-    <link rel="stylesheet" href="./CSS/normalize.css">
-    <link rel="stylesheet" href="./CSS/style.css">
-</head>
-<body>
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Education</title>
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body class="quicksand">
+    <header class="header">
+      <div class="nav-containers">
+        <nav class="nav display-flex container-responsive">
+          <div class="logo-container">
+            <img class="logo" src="./assets/logo.png" alt="" />
+            <h3 class="logo-title black">SCHOOL</h3>
+          </div>
 
+          <div class="nav-links">
+            <ul class="list-items display-flex">
+              <li class="list-style">
+                <a class="link-style color-primary" href="">Home</a>
+              </li>
+              <li class="list-style">
+                <a class="link-style color-secondary" href="">About</a>
+              </li>
+              <li class="list-style">
+                <a class="link-style" href="">Facilities</a>
+              </li>
+              <li class="list-style">
+                <a class="link-style color-intermidiate" href="">Admission</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <button class="btn btn-primary btn-nav">
+              <a class="link-style color-white" href="">Contact</a>
+            </button>
+            <img
+              class="hamburger hide"
+              src="./assets/icons/hamburger.png"
+              alt=""
+            />
+          </div>
+        </nav>
+      </div>
+      <div class="hero-container container-responsive display-flex">
+        <div class="hero-contents">
+          <h1 class="hero-title responsive-title">
+            <span class="color-primary responsive-title">Empowering</span>
+            <br />students from small age
+            <span class="color-secondary responsive-title">towards vision</span>
+          </h1>
+          <p class="hero-description responsive-title-contents">
+            With the courage, Confidence, Creativity and Compassion to make
+            their Unique Contribution in a Diverse and Dynamic World.
+          </p>
+          <button class="btn btn-secondary">
+            <a href="" class="link-style color-white">Enroll Now</a>
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/hero-kids.png" alt="" />
+        </div>
+      </div>
     </header>
     <main>
+      <section class="curriculum">
+        <div class="container-responsive">
+          <h2 class="curriculum-heading responsive-primary-heading black">
+            Standard Curriculum
+          </h2>
+          <div class="cards">
+            <div class="card-container card-1">
+              <img src="./assets/kinder.png" alt="" />
+              <h3 class="black responsive-secondary-heading">
+                Kinder (3-6) Years
+              </h3>
+              <p class="responsive-paragraph color-gray">
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mu sdis parturient
+              </p>
+              <div class="link">
+                <a
+                  class="link-style color-secondary responsive-paragraph"
+                  href=""
+                  >Read More</a
+                >
+              </div>
+            </div>
 
+            <div class="card-container card-2">
+              <img src="./assets/elementary.png" alt="" />
+              <h3 class="black responsive-secondary-heading">
+                Kinder (3-6) Years
+              </h3>
+              <p class="responsive-paragraph color-gray">
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mu sdis parturient
+              </p>
+              <div class="link">
+                <a
+                  class="link-style color-primary responsive-paragraph mb"
+                  href=""
+                  >Read More</a
+                >
+              </div>
+            </div>
+            <div class="card-container card-3">
+              <img src="./assets/middle.png" alt="" />
+              <h3 class="black responsive-secondary-heading">
+                Kinder (3-6) Years
+              </h3>
+              <p class="responsive-paragraph color-gray">
+                Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur ridiculus mu sdis parturient
+              </p>
+              <div class="link">
+                <a
+                  class="link-style color-intermidiate responsive-paragraph"
+                  href=""
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="arrow-container">
+            <button class="round-btn" href="">
+              <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+            </button>
+            <button class="round-btn" href="">
+              <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
