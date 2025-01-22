@@ -45,7 +45,13 @@
         </nav>
       </div>
       <div class="advertise container-responsive">
-        <marquee class="responsive-marquee-heading color-white marquee" behavior="" direction="left" scrollamount="5"
+        <marquee
+          class="responsive-marquee-heading color-white marquee"
+          behavior=""
+          direction="left"
+          scrollamount="5"
+          onmouseover="this.stop()"
+          onmouseout="this.start()"
           >Welcome to Kids School - Where Learning Meets Fun!</marquee
         >
       </div>
@@ -76,7 +82,7 @@
             Standard Curriculum
           </h2>
           <div class="cards">
-            <div class="card-container card-1">
+            <div class="card-container card-1 hover">
               <img src="./assets/kinder.png" alt="" />
               <h3 class="black responsive-secondary-heading">
                 Kinder (3-6) Years
@@ -94,7 +100,7 @@
               </div>
             </div>
 
-            <div class="card-container card-2">
+            <div class="card-container card-2 hover">
               <img src="./assets/elementary.png" alt="" />
               <h3 class="black responsive-secondary-heading">
                 Kinder (3-6) Years
@@ -111,7 +117,7 @@
                 >
               </div>
             </div>
-            <div class="card-container card-3">
+            <div class="card-container card-3 hover">
               <img src="./assets/middle.png" alt="" />
               <h3 class="black responsive-secondary-heading">
                 Kinder (3-6) Years
@@ -130,10 +136,10 @@
             </div>
           </div>
           <div class="arrow-container">
-            <button class="round-btn" href="">
+            <button class="round-btn left" href="">
               <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
             </button>
-            <button class="round-btn" href="">
+            <button class="round-btn right" href="">
               <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
             </button>
           </div>
@@ -146,7 +152,7 @@
             Our Stories
           </h2>
           <div class="story-collage">
-            <div class="story story-1">
+            <div class="story story-1 hover">
               <div class="story-image-container">
                 <img src="./assets/story-1.png" alt="" />
                 <span class="badge raleway badge-primary"
@@ -164,7 +170,7 @@
                 </p>
               </div>
             </div>
-            <div class="story story-2">
+            <div class="story story-2 hover">
               <div class="story-image-container">
                 <img src="./assets/story-2.png" alt="" />
                 <span class="badge raleway badge-secondary responsive-paragraph"
@@ -177,7 +183,7 @@
                 </h3>
               </div>
             </div>
-            <div class="story story-3">
+            <div class="story story-3 hover">
               <div class="story-image-container">
                 <img src="./assets/story-3.png" alt="" />
                 <span
@@ -191,7 +197,7 @@
                 </h3>
               </div>
             </div>
-            <div class="story story-4">
+            <div class="story story-4 hover">
               <div class="story-image-container">
                 <img src="./assets/story-4.png" alt="" />
                 <span class="badge raleway badge-secondary responsive-paragraph"
@@ -204,7 +210,7 @@
                 </h3>
               </div>
             </div>
-            <div class="story story-5">
+            <div class="story story-5 hover">
               <div class="story-image-container">
                 <img src="./assets/story-5.png" alt="" />
                 <span class="badge raleway badge-secondary responsive-paragraph"
@@ -219,7 +225,7 @@
             </div>
           </div>
           <button class="btn btn-secondary">
-            <a href="" class="link-style color-white">Enroll Now</a>
+            <a href="" class="link-style color-white">View All</a>
           </button>
         </div>
       </section>
@@ -256,10 +262,54 @@
         <div class="social">
           <h3 class="social-title">Keep In Touch</h3>
           <div class="icons">
-            <a href=""><img src="./assets/icons/fb.png" alt="" /></a>
-            <a href=""><img src="./assets/icons/dribble.png" alt="" /></a>
-            <a href=""><img src="./assets/icons/twitter.png" alt="" /></a>
-            <a href=""><img src="./assets/icons/google+.png" alt="" /></a>
+            <a href="#" class="icon-container" style="--accent-color: #0866ff">
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="icon-container" style="--accent-color: #ea4c89">
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Dribbble</title>
+                <path
+                  d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="icon-container" style="--accent-color: #000000">
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>X</title>
+                <path
+                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                />
+              </svg>
+            </a>
+            <a href="#" class="icon-container" style="--accent-color: #ff0000">
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
